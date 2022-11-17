@@ -29,7 +29,7 @@ def make_employee_dict(_name, _ID_number, _salary, _email_add):
     """creates dictionary for employee data, so when key id number is known, their name, email, and salary can be returned"""
     dict={} #creates empty dictionary for employee data
     for i in range(len(_ID_number)): #sets length of employee info
-        dict[ID_number[i]]=Employee(_name[i], _ID_number[i], _salary[i], _email_add[i]) #sets id number up as key for private data
+        dict[_ID_number[i]]=Employee(_name[i], _ID_number[i], _salary[i], _email_add[i]) #sets id number up as key for private data
     return dict #returns filled dictionary
 
 #testing
