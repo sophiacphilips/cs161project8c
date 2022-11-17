@@ -29,13 +29,13 @@ def make_employee_dict(name, ID_number, salary, email_add):
     """creates dictionary for employee data, so when key id number is known, their name, email, and salary can be returned"""
     dict={} #creates empty dictionary for employee data
     for i in range(len(ID_number)): #sets length of employee info
-        dict[ID_number[i]]=Employee(name[i], ID_numbers[i], salary[i], email_add[i]) #sets id number up as key for private data
+        dict[ID_number[i]]=Employee(name[i], ID_number[i], salary[i], email_add[i]) #sets id number up as key for private data
     return dict #returns filled dictionary
 
 #testing
 #name= ["Jean", "Kat", "Pomona"]
-#ID_numbers=["100", "101", "102"]
+#ID_number=["100", "101", "102"]
 #salary=[30, 35, 28]
 #email_add=["Jean@aol.com", "Kat@aol.com", "Pomona@aol.com"]
-#result= make_employee_dict(name, ID_numbers, salary, email_add)
+#result= make_employee_dict(name, ID_number, salary, email_add)
 #print(result["100"].get_name())
