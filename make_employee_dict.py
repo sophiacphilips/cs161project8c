@@ -25,11 +25,11 @@ class Employee:
         """returns email_add"""
         return self._email_add
 
-def make_employee_dict(name, ID_number, salary, email_add):
+def make_employee_dict(_name, ID_number, _salary, _email_add):
     """creates dictionary for employee data, so when key id number is known, their name, email, and salary can be returned"""
     dict={} #creates empty dictionary for employee data
     for i in range(len(ID_number)): #sets length of employee info
-        dict[ID_number[i]]=Employee(name[i], ID_number[i], salary[i], email_add[i]) #sets id number up as key for private data
+        dict[ID_number[i]]=Employee(_name[i], ID_number[i], _salary[i], _email_add[i]) #sets id number up as key for private data
     return dict #returns filled dictionary
 
 #testing
